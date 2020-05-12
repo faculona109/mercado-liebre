@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edicion productos</title>
+</head>
+<body>
+    <h1>editar producto</h1>
+    <form action='/product/edit/<%=productoEncontrado.id%>?_method=PUT' method='post'>
+      <label for='name'>Nombre:</label>
+      <input type='text' name='name' value='<%=productoEncontrado.name%>'>
+      <button type='submit'>EDITAR</button>
+    </form>
+</body>
+</html>
